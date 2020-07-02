@@ -1,0 +1,83 @@
+$fonts-path: "./src/fonts";
+/* libre-franklin-300 - latin */
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 300;
+  src: url("#{$fonts-path}/libre-franklin-v4-latin-300.eot"); /* IE9 Compat Modes */
+  src: local("Libre Franklin Light"), local("LibreFranklin-Light"),
+    url("#{$fonts-path}/libre-franklin-v4-latin-300.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("#{$fonts-path}/libre-franklin-v4-latin-300.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("#{$fonts-path}/libre-franklin-v4-latin-300.woff") format("woff"),
+    /* Modern Browsers */ url("#{$fonts-path}/libre-franklin-v4-latin-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("#{$fonts-path}/libre-franklin-v4-latin-300.svg#LibreFranklin")
+      format("svg"); /* Legacy iOS */
+}
+/* libre-franklin-600 - latin */
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 600;
+  src: url("#{$fonts-path}/libre-franklin-v4-latin-600.eot"); /* IE9 Compat Modes */
+  src: local("Libre Franklin SemiBold"), local("LibreFranklin-SemiBold"),
+    url("#{$fonts-path}/libre-franklin-v4-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("#{$fonts-path}/libre-franklin-v4-latin-600.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("#{$fonts-path}/libre-franklin-v4-latin-600.woff") format("woff"),
+    /* Modern Browsers */ url("#{$fonts-path}/libre-franklin-v4-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("#{$fonts-path}/libre-franklin-v4-latin-600.svg#LibreFranklin")
+      format("svg"); /* Legacy iOS */
+}
+/* libre-franklin-700 - latin */
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  src: url("#{$fonts-path}/libre-franklin-v4-latin-700.eot"); /* IE9 Compat Modes */
+  src: local("Libre Franklin Bold"), local("LibreFranklin-Bold"),
+    url("#{$fonts-path}/libre-franklin-v4-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("#{$fonts-path}/libre-franklin-v4-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("#{$fonts-path}/libre-franklin-v4-latin-700.woff") format("woff"),
+    /* Modern Browsers */ url("#{$fonts-path}/libre-franklin-v4-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("#{$fonts-path}/libre-franklin-v4-latin-700.svg#LibreFranklin")
+      format("svg"); /* Legacy iOS */
+}
+
+$mobile: 375px;
+$desktop: 1440px;
+
+// ## Colors
+
+// ### Primary
+
+$blue: hsl(223, 87%, 63%);
+
+// ### Secondary
+
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+
+// ### Neutral
+
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+
+// ## Typography
+
+// ### Body Copy
+
+$font-size: 20px;
