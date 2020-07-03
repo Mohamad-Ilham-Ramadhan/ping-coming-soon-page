@@ -1,2 +1,94 @@
-@use 'styles/variables' as *;
+@use 'styles/vendors/bootstrap/bootstrap' as *;
 @use 'styles/utilities' as *;
+@use 'styles/variables' as *;
+@use 'sass:color';
+
+// bootstrap customization
+.form-control {
+  font-size: 0.62rem;
+  border-color: $secondary-pale-blue;
+  height: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  &::placeholder {
+    color: $secondary-pale-blue;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+.form-group {
+  margin-bottom: 0.5rem;
+}
+.btn {
+  box-shadow: 0px 10px 10px 0 rgba($secondary-pale-blue, 0.4);
+}
+// bootstrap customization
+
+// ==============================
+
+// project related customization
+.text-neutral-gray {
+  color: $neutral-gray;
+}
+.text-neutral-very-dark-blue {
+  color: $neutral-very-dark-blue;
+}
+html {
+  font-size: 20px;
+}
+body {
+  font-family: "Libre Franklin";
+}
+.header {
+  padding-top: 57px;
+}
+.heading-1 {
+  font-size: 1.1rem;
+  margin-bottom: 0.9rem;
+}
+.heading-2 {
+  font-size: 0.63rem;
+  margin-bottom: 1.63rem;
+}
+.navbar {
+  margin-bottom: 0.65rem;
+  .navbar-brand img {
+    width: 2.7rem;
+  }
+}
+.container-form {
+  padding: 0 45px;
+  .btn-submit {
+    font-size: 0.62rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+.container-img {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 58px;
+  padding-bottom: 120px;
+}
+
+.footer {
+  padding-bottom: 40px;
+  .icons {
+    font-size: 0.68rem;
+
+    .icon {
+      border: 1px solid color.scale($secondary-pale-blue, $saturation: -50%);
+      border-radius: 100%;
+      padding: 7px;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .copyright {
+    font-size: 0.52rem;
+  }
+}
+// project related customization
