@@ -597,8 +597,8 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 7px;
+  padding-left: 7px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -625,8 +625,8 @@ pre code {
 
 .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 7px;
+  padding-left: 7px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -654,8 +654,8 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -7px;
+  margin-left: -7px;
 }
 
 .no-gutters {
@@ -676,8 +676,8 @@ pre code {
 .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 
 .col {
@@ -4483,25 +4483,25 @@ input[type=button].btn-block {
 }
 
 .card-deck .card {
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 @media (min-width: 576px) {
   .card-deck {
     display: flex;
     flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -7px;
+    margin-left: -7px;
   }
   .card-deck .card {
     flex: 1 0 0%;
-    margin-right: 15px;
+    margin-right: 7px;
     margin-bottom: 0;
-    margin-left: 15px;
+    margin-left: 7px;
   }
 }
 
 .card-group > .card {
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 @media (min-width: 576px) {
   .card-group {
@@ -11557,16 +11557,20 @@ h3 {
   content: "";
 }
 
+.container {
+  max-width: 710px;
+}
+
 .form-control {
   font-size: 0.62rem;
-  border-color: #c2d3ff;
+  border-color: #b3beda;
   height: auto;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1.5rem;
 }
 .form-control::placeholder {
-  color: #c2d3ff;
+  color: #b3beda;
 }
 .form-control:focus {
   box-shadow: none !important;
@@ -11637,7 +11641,7 @@ body {
 }
 
 .navbar {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.625rem;
 }
 .navbar .navbar-brand img {
   width: 2.7rem;
@@ -11648,6 +11652,7 @@ body {
 }
 .container-form .btn-submit {
   font-size: 0.62rem;
+  font-weight: 600;
   padding: 0.5rem 0.75rem;
   position: relative;
   top: -30px;
@@ -11669,18 +11674,112 @@ body {
 }
 .footer .icons {
   font-size: 0.68rem;
+  margin-right: 15px;
 }
-.footer .icons .icon {
-  border: 1px solid #d1daf0;
-  border-radius: 100%;
-  padding: 7px;
+.footer .icons a {
   margin-right: 10px;
 }
-.footer .icons .icon:last-child {
+.footer .icons a:hover {
+  text-decoration: none;
+}
+.footer .icons a:last-child {
   margin-right: 0;
+}
+.footer .icons .icon {
+  border: 1px solid rgba(194, 211, 255, 0.4);
+  border-radius: 100%;
+  padding: 8px;
+}
+.footer .icons .icon:hover {
+  background-color: #4f7df3;
+  border-color: #4f7df3;
+  color: white;
 }
 .footer .copyright {
   font-size: 0.52rem;
+}
+
+@media (min-width: 576px) {
+  .container-img {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .form-control {
+    font-size: 0.75rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .invalid-feedback {
+    font-size: 0.61rem;
+    padding-left: 1.5rem;
+  }
+
+  .navbar .navbar-brand img {
+    width: 3.75rem;
+  }
+
+  .heading-1 {
+    font-size: 2rem;
+  }
+
+  .heading-2 {
+    font-size: 0.85rem;
+    margin-bottom: 1.95rem;
+  }
+
+  .container-form .btn-submit {
+    top: 0;
+    font-size: 0.75rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .footer .copyright {
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .container-img {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .form-control {
+    font-size: 0.775rem;
+    padding-top: 0.775rem;
+    padding-bottom: 0.775rem;
+  }
+
+  .invalid-feedback {
+    font-size: 0.61rem;
+    padding-left: 1.5rem;
+  }
+
+  .navbar {
+    margin-bottom: 1.5rem;
+  }
+  .navbar .navbar-brand img {
+    width: 4.25rem;
+  }
+
+  .heading-1 {
+    font-size: 2.4rem;
+  }
+
+  .heading-2 {
+    font-size: 0.97rem;
+    margin-bottom: 1.95rem;
+  }
+
+  .container-form .btn-submit {
+    top: 0;
+    font-size: 0.775rem;
+    padding-top: 0.775rem;
+    padding-bottom: 0.775rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

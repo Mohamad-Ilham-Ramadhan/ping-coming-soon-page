@@ -39,24 +39,32 @@
     <main>
       <div class="container container-form">
         <form class="needs-validation" novalidate>
-          <div class="form-group">
-            <input
-              type="email"
-              class="form-control rounded-pill"
-              placeholder="Your email address..."
-              required
-            />
-            <div class="invalid-feedback text-center font-italic mb-3">
-              Please provide a valid email address
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control rounded-pill"
+                  placeholder="Your email address..."
+                  required
+                />
+                <div
+                  class="invalid-feedback text-center text-md-left font-italic mb-3"
+                >
+                  Please provide a valid email address
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <button
-              class="btn btn-block btn-primary btn-submit rounded-pill font-weight-bold"
-              type="submit"
-            >
-              Notify Me
-            </button>
+            <div class="col-md-4">
+              <div class="form-group">
+                <button
+                  class="btn btn-block btn-primary btn-submit rounded-pill"
+                  type="submit"
+                >
+                  Notify Me
+                </button>
+              </div>
+            </div>
           </div>
         </form>
       </div>
@@ -71,9 +79,15 @@
     <footer class="footer">
       <div class="container text-center">
         <div class="icons text-primary mb-4">
-          <span class="icon icon-facebook"></span>
-          <span class="icon icon-twitter"></span>
-          <span class="icon icon-instagram"></span>
+          <a href="#">
+            <span class="icon icon-facebook"></span>
+          </a>
+          <a href="#">
+            <span class="icon icon-twitter"></span>
+          </a>
+          <a href="#">
+            <span class="icon icon-instagram"></span>
+          </a>
         </div>
         <div class="copyright text-neutral-gray">
           &copy; Copyright Ping. All rights reserved.
