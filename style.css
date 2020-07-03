@@ -47,7 +47,6 @@
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -11536,7 +11535,6 @@ h3 {
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -11571,15 +11569,36 @@ h3 {
   color: #c2d3ff;
 }
 .form-control:focus {
-  box-shadow: none;
+  box-shadow: none !important;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  background-image: none !important;
 }
 
 .form-group {
   margin-bottom: 0.5rem;
 }
 
-.btn {
-  box-shadow: 0px 10px 10px 0 rgba(194, 211, 255, 0.4);
+.invalid-feedback {
+  display: block;
+  font-size: 0.51rem;
+  visibility: hidden;
+}
+
+.was-validated :invalid ~ .invalid-feedback,
+.was-validated :invalid ~ .invalid-tooltip,
+.is-invalid ~ .invalid-feedback,
+.is-invalid ~ .invalid-tooltip {
+  visibility: visible;
+}
+
+.btn,
+.btn:focus,
+.btn.focus,
+.btn:active:focus {
+  box-shadow: 0px 8px 10px 0 rgba(194, 211, 255, 0.7) !important;
 }
 
 .text-neutral-gray {
@@ -11625,12 +11644,18 @@ body {
 .container-form .btn-submit {
   font-size: 0.62rem;
   padding: 0.5rem 0.75rem;
+  position: relative;
+  top: -30px;
+}
+
+.was-validated .btn-submit {
+  top: 0;
 }
 
 .container-img {
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 58px;
+  padding-top: 28px;
   padding-bottom: 120px;
 }
 
